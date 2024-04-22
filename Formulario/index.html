@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function senai() {
+            $nome = this.form1.fnome.value;
+            $idade = this.form1.fidade.value;
+            $cidade = this.form1.fcidade.value;
+            $estado = this.form1.festado.value;
+            $sexo = this.form1.fsexo.value;
+            document.write("Olá " + $nome + ", você tem " + $idade + " anos," +
+                " se identifica pelo sexo " + $sexo + " e atualmente mora em " + $cidade + ", " + $estado)
+            return false;
+        }
+    </script>
+
+</head>
+
+<body>
+    <form name="form1" method="post" action="" onsubmit="return senai()">
+        nome: <input type="text" name="fnome"> <br>
+        idade: <input type="text" name="fidade"> <br>
+        cidade: <input type="text" name="fcidade" size="20" maxlenght="20"> <br>
+        estado: <select name="festado">
+            <option value="Em branco">escolha uma opcão abaixo: </option>
+            <option value="AC"> Acre [AC] </option>
+            <option value="AL"> Alagoas [AL] </option>
+            <option value="AP"> Amapá [AP] </option>
+            <option value="AM"> Amazonas [AM] </option>
+            <option value="BA"> Bahia [BA] </option>
+            <option value="CE"> Ceara [CE] </option>
+            <option value="ES"> Espírito Santo [ES] </option>
+            <option value="GO"> Goiás [GO] </option>
+            <option value="MA"> Maranhão [MA] </div>
+            </option>
+            <option value="MT"> Mato Grosso [MT] </option>
+            <option value="MS"> Mato Grosso do Sul [MS] </option>
+            <option value="MG"> Minas Gerais [MG] </option>
+            <option value="PA"> Pará [PA] </option>
+            <option value="PB"> Paraíba [PB] </option>
+            <option value="PR"> Paraná [PR] </option>
+            <option value="PE"> Pernambuco [PE] </option>
+            <option value="PI"> Piauí [PI] </option>
+            <option value="RJ"> Rio de Janeiro [RJ] </option>
+            <option value="RN"> Rio Grande do Norte [RN] </option>
+            <option value="RS"> Rio Grande do Sul [RS] </option>
+            <option value="RO"> Rondônia [RO] </option>
+            <option value="RR"> Roraima [RR] </option>
+            <option value="SC"> Santa Catarina [SC] </option>
+            <option value="SP"> São Paulo [SP] </option>
+            <option value="SE"> Sergipe [SE] </option>
+            <option value="TO"> Tocantins [TO] </option>
+            <option value="DF"> Distrito Federal [DF] </option>
+        </select><BR>
+        sexo: Masculino <input type="radio" name="fsexo" value="masculino">
+        Feminino <input type="radio" name="fsexo" value="feminino">
+
+        <br>
+        <input type="submit" value="gravar">
+        <input type="reset" value="limpar">
+        <br>
+        <br>
+        <Formn name="form1" action=" " method="post">
+
+            Escolha um campeonato para ser campeao esse ano: <br>
+            <input type="checkbox" name="libertadores">libertadores<br>
+            <input type="checkbox" name="copa do brasil">copa do brasil<br>
+            <input type="checkbox" name="brasileirao">brasileirao<br>
+            <input type="checkbox" name="paulista">paulista<br>
+
+
+        </Formn>
+
+    </form>
+
+</body>
+
+</html>
