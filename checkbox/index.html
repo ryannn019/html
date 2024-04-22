@@ -1,0 +1,55 @@
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $frutas_select=""
+        function oNomeQueEuQuiser() {
+         if (this.form2.fruta_banana.checked) {
+            $frutas_select= $frutas_select + "Libertadores "
+         }
+          if (this.form2.fruta_maca.checked) {
+            $frutas_select= $frutas_select + "Copa do Brasil "
+         }
+          if (this.form2.fruta_uva.checked) {
+            $frutas_select= $frutas_select +"Brasileiro "
+         }
+          if (this.form2.fruta_pera.checked) {
+            $frutas_select= $frutas_select + "Paulista "
+         }
+          if (this.form2.fruta_abacate.checked) {
+            $frutas_select= $frutas_select + "Sul Americana "
+         }
+          if (this.form2.fruta_manga.checked) {
+            $frutas_select= $frutas_select + "Mundial "
+         }
+         alert("Seu time é: " + $frutas_select)
+         
+         
+         $curso= this.form2.fcurso.value
+         alert("Curso: "+ $curso)
+         return false
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form2" method="post" action="pag2.php" onsubmit="return oNomeQueEuQuiser()">
+        <h1>ESCOLHA UM CAMPEONATO PARA SEU TIME SER CAMPEÃO: </h1><br>
+        <input type="checkbox" name="fruta_banana">Libertadores<br>
+        <input type="checkbox" name="fruta_maca">Copa do Brasil<br>
+        <input type="checkbox" name="fruta_uva">Brasileiro<br>
+        <input type="checkbox" name="fruta_pera">Paulista<br>
+        <input type="checkbox" name="fruta_abacate">Sul Americana<br>
+        <input type="checkbox" name="fruta_manga">Mundial<br>
+       
+
+        <input type="submit" value="Gravar">
+    </form>
+</body>
+
+</html>
