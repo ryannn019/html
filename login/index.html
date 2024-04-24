@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function validarForm() {
+            $login = this.form1.fLogin.value;
+            $senha = this.form1.fSenha.value;
+
+            $qtdCaracteres_login = $login.length;
+            $qtdCaracteres_senha = $senha.length;
+
+            if ($qtdCaracteres_login < 1) {
+                alert("Por favor digite seu login")
+                return false;
+            }
+
+            if ($qtdCaracteres_senha < 1) {
+                alert("Por favor digite sua senha")
+                return false;
+            }
+
+            if (($login == "senai") && ($senha == "sumare")) {
+
+                window.location.href = "pagina.html";
+
+            } else {
+
+                window.location.href = "erro.html";
+
+            }
+            return false;
+        }
+
+    </script>
+</head>
+
+<body bgcolor="#80dfff">
+    <form name="form1"  method="post" onsubmit="return validarForm()">
+        <center><br><br><br><br><br><br>
+            <font size="7"><b>FAÇA SEU LOGIN</b></font><br><br>
+        <table border="0">
+            <tr>
+                <td><font size="4">Login:<input type="text" name="fLogin" size="5"></font></td>
+            </tr>
+            <tr>
+                <td><font size="4">Senha:<input type="password" name="fSenha" size="5"></font></td>
+            </tr>
+
+        </table>
+
+        <input type="submit" value="Gravar">
+        <input type="reset" value="Limpar">
+    </form></center>
+
+
+
+</body>
+
+</html>
