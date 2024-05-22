@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIPAT - Semana Interna de Prevenção de Acidentes no Trabalho</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SIPAT - Semana Interna de Prevenção de Acidentes no Trabalho</h1>
+    </header>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#atividades">Atividades</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <section id="sobre">
+        <h2>Sobre a SIPAT</h2>
+        <p>A Semana Interna de Prevenção de Acidentes no Trabalho (SIPAT) é um evento realizado anualmente com o objetivo de conscientizar os colaboradores sobre a importância da prevenção de acidentes e promoção da saúde e segurança no ambiente de trabalho.</p>
+    </section>
+    <section id="atividades">
+        <h2>Atividades</h2>
+        <ul>
+            <li>Palestras sobre segurança no trabalho</li>
+            <li>Treinamentos sobre primeiros socorros</li>
+            <li>Dinâmicas de grupo</li>
+            <li>Campanhas de vacinação</li>
+            <li>Exercícios de alongamento</li>
+        </ul>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Para mais informações sobre a SIPAT, entre em contato conosco:</p>
+        <p>Telefone: (XX) XXXX-XXXX</p>
+        <p>Email: contato@sipat.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 SIPAT - Semana Interna de Prevenção de Acidentes no Trabalho</p>
+    </footer>
+</body>
+</html>
